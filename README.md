@@ -76,7 +76,7 @@ Guy Fieri Questions and Answers:
     -W: 99
     -R: 101
 
--From what college did Guy Fieri graduate prior to making it big on the Food Network?
+-From what college did Guy Fieri graduate prior to making it big?
     -W: UCLA
     -W: Harvard
     -R: UNLV

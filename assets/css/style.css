@@ -1,0 +1,35 @@
+.wrapper {
+    margin-top: 300px;
+    margin-left: 400px;
+}
+
+#header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+/* p {
+   
+} */
+
+#timer {
+    margin-bottom: 20px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cont-start {
+    margin: 40px;
+}
+
+.answer {
+    margin: 20px;
+}
+
