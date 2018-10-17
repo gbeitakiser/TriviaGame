@@ -45,3 +45,74 @@ Psudeo Code
 
 
 
+
+
+
+Guy Fieri Questions and Answers:
+
+-What's the name of Guy Fieri's town?
+    -W: Guysborough
+    -W: Fieriville
+    -R: Flavor Town
+    -W: Kitchen Sink
+
+-At what age did Guy Fieri start working in the food industry?
+    -R: 10
+    -W: 22
+    -W: 17
+    -W: 80 would have been too soon
+
+-How many stars did The New York Times food critic Pete Wells give Guy’s American Kitchen & Bar in Manhattan?
+    -W: 5 Stars
+    -W: 4 Stars
+    -W: 3 Stars
+    -W: 2 Stars
+    -W: 1 Star
+    -R: 0 Stars
+
+-How many gay weddings has Guy Fieri officiated at?
+    -W: 28
+    -W: 45
+    -W: 99
+    -R: 101
+
+-From what college did Guy Fieri graduate prior to making it big on the Food Network?
+    -W: UCLA
+    -W: Harvard
+    -R: UNLV
+    -W: USC
+
+-What kind of car does Guy Fieri usually drive?
+
+    -R: A classic Chevy Camaro
+    -W: The Oscar Mayer Weinermobile
+    -W: A classic Ford Mustang
+    -W: A classic Chevy Corvette
+
+-Guy Fieri got famous by wining which gameshow?
+
+    -W: Celebrity Chef
+    -R: The Next Food Network Star
+    -W: The Apprentice
+    -W: America's Next Top Model
+
+-How many books has Guy Fieri written?
+
+    -W: Two
+    -W: None
+    -W: Eighteen
+    -R: Four
+
+-Guy Fieri has won the key to which city?
+
+    -W: Flavor Town, Flavor Town
+    -W: Chicago, Illinois
+    -R: Ferndale, California
+    -W: Los Angeles, California
+
+-Where did Guy Fieri attend a foreign exchange program?
+
+    -R: France
+    -W: Spain
+    -W: Wakanda
+    -W: Trick question, he only studied in the USA

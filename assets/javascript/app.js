@@ -6,11 +6,12 @@ var unanswered = 0;
 
 // Timer 
 
-var count = 2;
+var timeLeft = 30;
 
 function timer() {
-    count = count - 1;
-    if (count <= 0) {
+    timeLeft -= 1;
+    $("#timer").text("Seconds Remaining: " + timeLeft);
+    if (timeLeft <= 0) {
         gameOver();
     }
 }
@@ -23,7 +24,6 @@ function gameOver() {
 }
 
 
-
 $(document).ready(function() {
 
     // Displays score screen for gameOver function
@@ -34,10 +34,12 @@ $(document).ready(function() {
     $(".cont-game").hide();
     $(".cont-over").hide();
 
+
     $("#start").click(function() {
 
         // Timer
         var counter = setInterval(timer, 1000);
+        $("#timer").text("Seconds Remaining: " + timeLeft);
 
         $(".cont-start").hide();
         $(".cont-game").show();
