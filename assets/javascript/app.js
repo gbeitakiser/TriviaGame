@@ -58,6 +58,7 @@ $(document).ready(function() {
         checkboxesF.change(function() {
             answerWrong++;
             unanswered--;
+            writeAnswers();
             console.log("False " + this.checked);
             console.log("Wrong Answers: " + answerWrong);
             console.log("Unanswered: " + unanswered);
@@ -67,6 +68,7 @@ $(document).ready(function() {
         checkboxesT.change(function() {
             answerRight++;
             unanswered--;
+            writeAnswers();
             console.log("True " + this.checked);
             console.log("Right Answers: " + answerRight);
             console.log("Unanswered: " + unanswered);
@@ -85,10 +87,12 @@ $(document).ready(function() {
         // 
            
 
-        // Displays score screen for gameOver function
-        $("#right-answers").html("Right Answers: " + answerRight);
-        $("#wrong-answers").html("Wrong Answers: " + answerWrong);
-        $("#unanswered").html("Unanswered: " + unanswered);
+        // Displays score on game over screen
+        function writeAnswers() {
+            var writeAnswerRight = $("#right-answers").html("Right Answers: " + answerRight);
+            var writeAnswerWrong = $("#wrong-answers").html("Wrong Answers: " + answerWrong);
+            var writeUnanswered = $("#unanswered").html("Unanswered: " + unanswered);
+        }
 
         // Sends user to game over screen if they finish early and click button
         $("#done").click(function() {
