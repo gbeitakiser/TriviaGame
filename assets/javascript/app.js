@@ -3,6 +3,9 @@
 var answerRight = 0;
 var answerWrong = 0;
 var unanswered = 0;
+console.log(answerRight);
+console.log(answerWrong);
+console.log(unanswered);
 
 // Timer 
 
@@ -15,6 +18,10 @@ function timer() {
         gameOver();
     }
 }
+
+// Check Score
+
+
 
 // Game Over Function
 function gameOver() {
@@ -34,8 +41,8 @@ $(document).ready(function() {
     // Starts game when clicked
     $("#start").click(function() {
         
-        // Timer
-        var counter = setInterval(timer, 1000);
+        // Timer and Timer Display
+        // var counter = setInterval(timer, 1000);
         $("#timer").text("Seconds Remaining: " + timeLeft);
 
         // Hides start and end screen so only game screen shows
@@ -44,10 +51,12 @@ $(document).ready(function() {
         $(".cont-over").hide();
 
         // Ensures only one checkbox can be clicked at a time
-        $(document).on('click', 'input[type="checkbox"]', function() {      
-            $('input[type="checkbox"]').not(this).prop('checked', false);      
-        });
+        // $(".answer").on('click', 'input[type="checkbox"', function() {      
+        //     $('input[type="checkbox"]').not(this).prop('checked', false);      
+        // });
 
+        // Listens for checked boxes and adds response to Questions Right or Questions Wrong depending on whether it's correct
+           
 
         // Displays score screen for gameOver function
         $("#right-answers").html("Right Answers: " + answerRight);
