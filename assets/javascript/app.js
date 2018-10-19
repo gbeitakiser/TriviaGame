@@ -19,19 +19,29 @@ $(document).ready(function() {
 
         // Timer 
 
-        var timeLeft = 5
+        var timeLeft = 60;
+
+        //
+        ////
+        //////
+        // Needs Work Below
 
         function timer() {
             timeLeft -= 1;
             $("#timer").text("Seconds Remaining: " + timeLeft);
             if (timeLeft <= 0) {
+                clearInterval(counter)
                 gameOver();
-                return;
             }
         }
 
-        var counter = setInterval(timer, 1000); //Uncomment when ready to test timer
+        var counter = setInterval(timer, 1000);
         $("#timer").text("Seconds Remaining: " + timeLeft);
+
+        // Needs work above
+        //////
+        ////
+        //
 
         // Hides start and end screen so only game screen shows
         $(".cont-start").hide();
@@ -78,6 +88,7 @@ $(document).ready(function() {
                 if (this.checked) {
                     answerRight++;
                     unanswered--;
+                    console.log("Inside True")
                 }
             });
     
@@ -85,6 +96,7 @@ $(document).ready(function() {
                 if (this.checked) {
                     answerWrong++;
                     unanswered--;
+                    console.log("Inside False")
                 }
             });
 
@@ -99,6 +111,7 @@ $(document).ready(function() {
 
         // Game Over Function
         function gameOver() {
+            console.log("Inside Game Over")
             renderScore();
             writeAnswers();
             $(".cont-start").hide();
