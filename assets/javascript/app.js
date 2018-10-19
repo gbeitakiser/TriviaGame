@@ -19,17 +19,18 @@ $(document).ready(function() {
 
         // Timer 
 
-        var timeLeft = 5;
+        var timeLeft = 5
 
         function timer() {
             timeLeft -= 1;
             $("#timer").text("Seconds Remaining: " + timeLeft);
             if (timeLeft <= 0) {
                 gameOver();
+                return;
             }
         }
 
-        // var counter = setInterval(timer, 1000); //Uncomment when ready to test timer
+        var counter = setInterval(timer, 1000); //Uncomment when ready to test timer
         $("#timer").text("Seconds Remaining: " + timeLeft);
 
         // Hides start and end screen so only game screen shows
@@ -70,64 +71,24 @@ $(document).ready(function() {
             $(".answer10").not(this).prop('checked', false);
         });
         
-        //
-        ////
-        //////
-        //Section Below Needs Work
-
-        // Listens for checked boxes and adds response to Questions Right or Questions Wrong depending on which checkbox is clicked
-
-
-        var checkboxesF = $('input[name="false"]');
-        checkboxesF.change(function() {
-            answerWrong++;
-            unanswered--;
-            writeAnswers();
-            // console.log("Right Answers: " + answerRight);
-            // console.log("Wrong Answers: " + answerWrong);
-            // console.log("Unanswered: " + unanswered);
-            // console.log("--------------");
-        });
-
-        var checkboxesT = $('input[name="true"]');
-        checkboxesT.change(function() {
-            answerRight++;
-            unanswered--;
-            writeAnswers();
-            // console.log("Right Answers: " + answerRight);
-            // console.log("Wrong Answers: " + answerWrong);
-            // console.log("Unanswered: " + unanswered);
-            // console.log("--------------");
-        });
-
-        $(document).click(function() {
+    
+        // Renders the score once the game is over
+        function renderScore() {
             $('input[name="true"]').each(function () {
                 if (this.checked) {
-                    console.log($(this).val());
-                    console.log(this);
+                    answerRight++;
+                    unanswered--;
                 }
-                // console.log(this);
             });
     
             $('input[name="false"]').each(function () {
                 if (this.checked) {
-                    console.log($(this).val());
-                    console.log(this);
+                    answerWrong++;
+                    unanswered--;
                 }
-                // console.log(this);
             });
 
-        })
-
-
-        
-
-
-        //////
-        ////
-        //
-        //Section Above needs work
-           
+        }
 
         // Displays score on game over screen
         function writeAnswers() {
@@ -138,6 +99,8 @@ $(document).ready(function() {
 
         // Game Over Function
         function gameOver() {
+            renderScore();
+            writeAnswers();
             $(".cont-start").hide();
             $(".cont-game").hide();
             $(".cont-over").show();
