@@ -73,6 +73,14 @@ input {
     margin: 40px;
 }
 
+.cont-over {
+    font-weight: bold;
+}
+
+#finished {
+    font-size: 26pt;
+}
+
 .answer {
     margin: 20px;
 }
