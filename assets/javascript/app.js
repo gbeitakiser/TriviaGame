@@ -12,19 +12,18 @@ $(document).ready(function() {
     $(".cont-game").hide();
     $(".cont-over").hide();
 
+
     // Starts game when clicked
     $("#start").click(function() {
+
+        // Guy Fieri says Flavortown when start button clicked
+        var flavorTown = document.createElement("audio");
+        flavorTown.setAttribute("src", "assets/images/flavortown.mp3");
+        flavorTown.play();
         
-        // Timer and Timer Display
-
-        // Timer 
-
-        var timeLeft = 60;
-
-        //
-        ////
-        //////
-        // Needs Work Below
+        
+        // Timer
+        var timeLeft = 30;
 
         function timer() {
             timeLeft -= 1;
@@ -35,13 +34,11 @@ $(document).ready(function() {
             }
         }
 
+        // Initialize and display timer
         var counter = setInterval(timer, 1000);
         $("#timer").text("Seconds Remaining: " + timeLeft);
 
-        // Needs work above
-        //////
-        ////
-        //
+
 
         // Hides start and end screen so only game screen shows
         $(".cont-start").hide();
