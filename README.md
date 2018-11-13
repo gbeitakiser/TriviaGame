@@ -1,5 +1,12 @@
 # Trivia Game
 
+
+Description:
+
+Welcome to Guy Fieri's world of taste, where your tastebuds will exist in a state of ecstasy. Click start and you have 30 seconds to unleash as much of your Guy Fieri knowledge as you can. If you finish early, click the submit button at the bottom of the page to see your score! If you don't finish in time, you'll see your score anyway.
+
+
+
 Psudeo Code
 
 ---HTML---
@@ -116,3 +123,7 @@ Guy Fieri Questions and Answers:
     -W: Spain
     -W: Wakanda
     -W: Trick question, he only studied in the USA
+
+
+#Project Link
+https://gbeitakiser.github.io/TriviaGame/ 
