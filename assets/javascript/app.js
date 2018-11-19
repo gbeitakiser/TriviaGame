@@ -118,8 +118,9 @@ $(document).ready(function() {
 
         // Sends user to game over screen if they finish early and click button
         $("#done").click(function() {
-            writeAnswers();
+            // writeAnswers();
             gameOver();
+            clearInterval(counter)
         })
     });
 
